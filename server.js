@@ -52,7 +52,7 @@ app.get("/user", (req, res, next) => {
 
 // !LOGIN
 app.use("/public", express.static(path.join(__dirname, "public")));
-app.get("/", (req, res) => {
+app.get("/login", (req, res) => {
     var duongDanFile = path.join(__dirname, "login.html");
     res.sendFile(duongDanFile);
 });
